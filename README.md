@@ -1,2 +1,2 @@
-# barbershop
-HTML Template Site
+# Barbershop
+HTML Template Web-Page
