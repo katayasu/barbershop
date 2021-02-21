@@ -1,193 +1,360 @@
 html {
-	font-family: 'PT Sans Narrow', sans-serif;
-	text-transform: uppercase;
+    font-family: "PT Sans Narrow", sans-serif;
+    text-transform: uppercase;
+    line-height: 2;
+    font-weight: bold;
 }
 
 time {
-	text-transform: lowercase;
+    text-transform: lowercase;
 }
 
- a { 
-    text-decoration: none; 
-   } 
-   li {
+h1 {
+    font-size: 30px;
+}
+
+a {
+    color: white;
+	border-bottom: white 1px;
+}
+
+li {
     list-style-type: none;
-   }
-   ul {
-    margin-left: 0; 
+}
+
+ul {
+    margin-left: 0;
     padding-left: 0;
-   }
+}
+
+a:active,
+a:focus {
+    outline: none;
+}
+
+button:active,
+button:focus {
+    outline: none;
+}
+
+input,
+textarea {
+    outline: none;
+}
+
+input:active,
+textarea:active {
+    outline: none;
+}
+
+:focus {
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+textarea {
+    resize: horizontal;
+}
 
 body {
-	background-image: url(../img/background.png);
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+    background-image: url(../img/background.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-header{
-	position:fixed;
-	width:100%;
-	padding:10px;
-	top:0;
-	left:0;
-	background-color: black;
+header {
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+    top: 0;
+    left: 0;
+    background-color: black;
 }
 
-.logo{
-   margin-left:20.2%;
-   margin-top:120px;
+.logo {
+    margin-left: 20.2%;
+    margin-top: 120px;
 }
 
-nav{
-	font-size: 16px;
-	vertical-align: middle;
-	margin-left:25%;
-	margin-right:45%;
+nav {
+    font-size: 16px;
+    vertical-align: middle;
+    margin-left: 25%;
+    margin-right: 45%;
 }
 
 .nav-strokes {
-	display:flex;
-	flex-direction: row;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
+
 .btn {
-	padding:5px;
-	border:none;
-	background-color: black;
-	color:white;
-	border-radius: 0;
-	font-family: 'PT Sans Narrow', sans-serif;
-	text-transform: uppercase;
+    padding: 5px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 0;
+    font-family: "PT Sans Narrow", sans-serif;
+    text-transform: uppercase;
+	text-decoration: none;
 }
 
 .btn:hover {
-	border-bottom: solid white;
-	border-radius: 0;
+    border-bottom: solid white;
+    border-radius: 0;
 }
 
 .btn:focus {
-	outline: none;
+    outline: none;
 }
-.features{
-	margin-top:3%;
-	margin-left:25%;
-	margin-right:25%;
-	font-size: 14px;
-	text-align: center;
-	color:white;
-	display:flex;
-	flex-direction: row;
+
+.features {
+    margin-top: 3%;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
-.feat{
-	display:flex;
-	flex-direction: column;
-	align-items: center;
+
+.feat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.login{
-	align-items: center;
-	position: absolute;
-	top:0;
-	right:27%;
-	width: 100px;
-	font-size: 16px;
-	height: 100%;
-	font-family: 'PT Sans Narrow', sans-serif;
-	text-transform: uppercase;
+.login {
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 27%;
+    width: 100px;
+    font-size: 16px;
+    height: 100%;
+    font-family: "PT Sans Narrow", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
-.login:hover{
-	background-color: white;
-	color:black;
-	overflow: hidden;
+.login:hover {
+    background-color: white;
+    color: black;
+    overflow: hidden;
 }
 
-.btn-icon{
-	position: relative;
-	left:-15px;
-	top: 2px;
-	filter:brightness(30%)
+.btn-icon {
+    position: relative;
+    left: -15px;
+    top: 2px;
+    filter: brightness(30%);
 }
 
-.white-block{
-	align-items: center;
-	margin-top:3%;
-	height:419px;
-	width:940px;
-	display: flex;
-	flex-direction: row;
-	background-image: url(../img/news-bg.png);
-	background-size: cover;
+.white-block {
+    align-items: flex-start;
+    margin-top: 3%;
+    height: 436px;
+    width: 940px;
+    display: flex;
+    flex-direction: row;
+    background-image: url(../img/news-bg.png);
+    background-size: cover;
     background-position: center;
-	color:black;
-	margin-left:25%;
-	margin-right:25%;
-	font-size: 14px;
-	justify-content: space-between;
+    color: black;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: 14px;
+    justify-content: space-between;
 }
 
 h2 {
-	font-size:30px;
+    font-size: 30px;
+    margin-bottom: 5px;
 }
 
-.right-block{
-	margin-top:-60px;
-	padding-left:80px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+.left-block {
+    padding-top: 10px;
+    padding-left: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .news {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 25px;
 }
 
-
-.left-block{
-	margin-top:-60px;
-	padding-right:80px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+p {
+    margin-bottom: -5px;
 }
 
-.block-shadow{
-	margin-top:auto;
-	margin-bottom: auto;
+.right-block {
+    padding-top: 10px;
+    padding-right: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.white-block-btn{
-	border:none;
-	background-color: black;
-	color:white;
-	border-radius: 0;
-	font-family: 'PT Sans Narrow', sans-serif;
-	text-transform: uppercase;
-	width:140px;
-	height:44px;
+.block-shadow {
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
-.white-block-btn:hover{
-	border:none;
-	background-color: rgb(148, 148, 148);
-	color: black;
-	border-radius: 0%;
+.white-block-btn {
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 0;
+    font-family: "PT Sans Narrow", sans-serif;
+    text-transform: uppercase;
+    width: 140px;
+    height: 44px;
+    font-weight: bold;
+    text-align: center;
+	text-decoration: none;
+	align-items: center;
 }
 
-.gallery-btns{
-	margin-top:5%;
-	display: flex;
-	flex-direction: row;
-	justify-content:space-between;
+.white-block-btn:hover {
+   filter:invert(100%)
+}
+
+.gallery-btns {
+    margin-top: 6%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: bold;
 }
 
 .gallery-img {
-	width:286px;
-	height:164px;
-	align-items: center;
-	margin-left:5px;
+    margin-top: 30px;
+    width: 286px;
+    height: 164px;
+    align-items: center;
+    margin-left: 5px;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    height: 455px;
+}
+
+.contacts {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(2, 93px);
+    grid-template-columns: repeat(2, 180px);
+}
+
+.contacts-btns {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(2, 190px);
+    font-weight: bold;
+}
+
+.contacts-block {
+    position: sticky;
+    margin-left: 10%;
+}
+
+h3 {
+    margin-bottom: 0px;
+    margin-left: 10px;
+}
+
+input {
+    border: 2px solid black;
+    width: 136px;
+    height: 38px;
+    color: #4a4948;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.send-btn {
+    margin-top: 5%;
+    width: 90%;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 3%;
+    background-image: url(../img/footer.png);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -91%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+}
+
+.footer-content {
+    margin-left: 24%;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    justify-content: space-between;
+}
+
+.social {
+    margin-left: -7%;
+}
+
+.social-icons {
+    position: relative;
+    margin-top: 10px;
+    margin-left: -4px;
+    display: flex;
+    flex-direction: row;
+    margin-left: -8px;
+}
+
+.social-icon {
+    align-items: center;
+    border: none;
+    background-color: black;
+    border-radius: 0;
+    height: 43px;
+    width: 43px;
+    margin-right: 5px;
+	text-align: center;
+}
+
+.social-icon:hover {
+    filter: invert(100%);
+}
+
+.social-name {
+    text-align: center;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 25%;
+}
+
+.relatives {
+    margin-bottom: 20px;
 }
