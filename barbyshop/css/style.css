@@ -259,7 +259,7 @@ p {
     display: grid;
     grid-auto-flow: column;
     grid-template-rows: repeat(2, 93px);
-    grid-template-columns: repeat(2, 180px);
+    grid-template-columns: repeat(2, 165px);
 }
 
 .contacts-btns {
@@ -281,7 +281,7 @@ h3 {
 
 input {
     border: 2px solid black;
-    width: 136px;
+    width: 126px;
     height: 38px;
     color: #4a4948;
     font-family: "PT Sans Narrow", sans-serif;
@@ -291,7 +291,7 @@ input {
 
 .send-btn {
     margin-top: 5%;
-    width: 90%;
+    width: 91%;
     font-weight: bold;
 }
 
@@ -356,5 +356,5 @@ footer {
 }
 
 .relatives {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
