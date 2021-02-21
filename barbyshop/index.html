@@ -45,27 +45,28 @@
     </div>
     </div>
     </main>
-    <section>
-      <div>
+    <section class="white-block">
+      <div class="right-block">
         <h2>Новости</h2>
-        <ul>
-          <li>Нам наконец завезли ягермейстер! Теперь вы можете пропустить стаканчик во время стрижки</li>
-          <li><time datetime="2021-01-11">11 января</time></li>
-          <li>В нашей команде пополнение, Борис "Бритва" Стригунец. Обладатель множества титулов и наград пополнил наши стройные ряды</li>
-          <li><time datetime="2021-01-18">18 января</time></li>
-        </ul>
-        <button type="button">Все новости</button>
+        <div class="news">
+          <p>Нам наконец завезли ягермейстер! Теперь вы можете <br> пропустить стаканчик во время стрижки <br><time datetime="2021-01-11">11 января</time></p>
+          <p>В нашей команде пополнение, Борис "Бритва" Стригунец,<br> обладатель множества титулов и наград пополнил <br> наши стройные ряды <br><time datetime="2021-01-18">18 января</time></p>
+        </div>
+        <button class="white-block-btn"type="button">Все новости</button>
       </div>
-      <div>
+      <img class="block-shadow" src="img/block-shadow.png">
+      <div class="left-block">
         <h2>Фотогалерея</h2>
-        <img src="img/gallery.png" alt="Фотогалерея">
-        <button>Назад</button>
-        <button>Вперед</button>
+        <img class="gallery-img" src="img/gallery.png" alt="Фотогалерея">
+        <div class="gallery-btns">
+        <button class="white-block-btn">Назад</button>
+        <button class="white-block-btn">Вперед</button>
+      </div>
       </div>
     </section>
-    <section>
-      <div>
-        <h3>Контактная информация</h3>
+    <section class="white-block">
+      <div class="right-block">
+        <h2>Контактная информация</h2>
         <ul>
           <li>Барбершоп "Бородинский"</li>
           <li>Адрес: г. Санкт-Петербург, Б. Конюшенная, Д.19/8></li>
@@ -79,17 +80,20 @@
         <button type="button">Как проехать</button>
         <a href="#">Обратная связь</a>
       </div>
-      <div>
-        <h3>Записаться</h3>
-        <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-        <div>
+      <img class="block-shadow" src="img/block-shadow.png">
+      <div class="left-block">
+        <h2>Записаться</h2>
+        <p>Укажите желаемую дату и время и мы свяжемся <br> с вами для подтверждения брони</p>
+        <div class="contacts">
           <ul>
             <li>Дата</li>
             <li><input></li>
             <li>Время</li>
             <li><input></li>
             <li>Ваше имя</li>
-            <li><input>Телефон</li>
+            <li><input></li>
+            <li>Телефон</li>
+            <li><input></li>
           </ul>
           <button>Отправить</button>
         </div>

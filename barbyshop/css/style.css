@@ -3,12 +3,26 @@ html {
 	text-transform: uppercase;
 }
 
+time {
+	text-transform: lowercase;
+}
+
  a { 
     text-decoration: none; 
    } 
+   li {
+    list-style-type: none;
+   }
+   ul {
+    margin-left: 0; 
+    padding-left: 0;
+   }
 
 body {
 	background-image: url(../img/background.png);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 header{
@@ -28,7 +42,7 @@ header{
 nav{
 	font-size: 16px;
 	vertical-align: middle;
-	margin-left:20%;
+	margin-left:25%;
 	margin-right:45%;
 }
 
@@ -43,6 +57,8 @@ nav{
 	background-color: black;
 	color:white;
 	border-radius: 0;
+	font-family: 'PT Sans Narrow', sans-serif;
+	text-transform: uppercase;
 }
 
 .btn:hover {
@@ -93,4 +109,85 @@ nav{
 	left:-15px;
 	top: 2px;
 	filter:brightness(30%)
+}
+
+.white-block{
+	align-items: center;
+	margin-top:3%;
+	height:419px;
+	width:940px;
+	display: flex;
+	flex-direction: row;
+	background-image: url(../img/news-bg.png);
+	background-size: cover;
+    background-position: center;
+	color:black;
+	margin-left:25%;
+	margin-right:25%;
+	font-size: 14px;
+	justify-content: space-between;
+}
+
+h2 {
+	font-size:30px;
+}
+
+.right-block{
+	margin-top:-60px;
+	padding-left:80px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.news {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+
+.left-block{
+	margin-top:-60px;
+	padding-right:80px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.block-shadow{
+	margin-top:auto;
+	margin-bottom: auto;
+}
+
+.white-block-btn{
+	border:none;
+	background-color: black;
+	color:white;
+	border-radius: 0;
+	font-family: 'PT Sans Narrow', sans-serif;
+	text-transform: uppercase;
+	width:140px;
+	height:44px;
+}
+
+.white-block-btn:hover{
+	border:none;
+	background-color: rgb(148, 148, 148);
+	color: black;
+	border-radius: 0%;
+}
+
+.gallery-btns{
+	margin-top:5%;
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between;
+}
+
+.gallery-img {
+	width:286px;
+	height:164px;
+	align-items: center;
+	margin-left:5px;
 }
