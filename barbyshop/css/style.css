@@ -5,6 +5,7 @@ html {
     font-weight: bold;
 }
 
+
 time {
     text-transform: lowercase;
 }
@@ -64,10 +65,15 @@ textarea {
 }
 
 body {
-    background-image: url(../img/background.png);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+	background-image: url(../img/background.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #070707;
+	margin: auto;
+	display: block;
 }
 
 header {
@@ -296,12 +302,11 @@ input {
 }
 
 footer {
-    margin-top: 3%;
     background-image: url(../img/footer.png);
     position: absolute;
     width: 100%;
     left: 0;
-    bottom: -91%;
+    bottom: -90%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
