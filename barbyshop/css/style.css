@@ -237,7 +237,8 @@ p {
 }
 
 .white-block-btn:hover {
-   filter:invert(100%)
+   filter:invert(100%);
+   border:2px solid white;
 }
 
 .gallery-btns {
