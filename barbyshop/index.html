@@ -1,147 +1,140 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Barbershop "Borodinski"</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Главная страница - Barbershop Borodinski</title>
+    <link rel="StyleSheet" href="css/normalize.css" type="text/css">
+    <link rel="StyleSheet" href="css/style.css" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
 </head>
 
-<body class="mx-auto">
-  <header>
-    <nav>
-      <div>
-        <ul class="nav-strokes">
-          <li><a class="btn" href="#">Информация</a></li>
-          <li><a class="btn" href="#">Новости</a></li>
-          <li><a class="btn" href="#">Прайс-лист</a></li>
-          <li><a class="btn" href="#">Магазин</a></li>
-          <li><a class="btn" href="#">Контакты</a></li>
-        </ul>
-      </div>
-        <button class="btn login" type="button"><img class="btn-icon" src="img/login.png" alt="Login">Вход</button>
-    </nav>
-  </header>
-  <main>
-    <img class="logo" src="svg/index-logo.svg" alt="Лого" height="132" width="1094">
-    <div class="features">
-      <div class="feat">
-        <h1>Быстро</h1>
-        <img src="img/shape.png" height="29" width="29" alt="Shape">
-        <p>Мы делаем свою работу быстро! Два часа <br> пролетят незаметно и вы - счастливый <br> обладатель стильной
-          стрижки-минутки!</p>
-      </div>
-      <div class="feat">
-        <h1>Круто</h1>
-        <img src="img/shape.png" height="29" width="29" alt="Shape">
-        <p>Забудьте, как вы стриглись раньше. <br> Мы сделаем из вас звезду футбола или кино! <br> Во всяком случае
-          внешне.</p>
-      </div>
-      <div class="feat">
-        <h1>Дорого</h1>
-        <img src="img/shape.png" height="29" width="29" alt="Shape">
-        <p>Наши мастера - профессионалы своего дела и <br> не могут стоить дешево. К тому же, разве цена <br> не дает
-          определенный статус?</p>
-      </div>
+<body>
+    <header class="main-header">
+        <div class="container clearfix">
+            <nav class="main-navigation">
+                <ul>
+                    <li class="main-navigation-item current-page">
+                        <a href="index.html">главная</a>
+                    </li>
+                    <li class="main-navigation-item">
+                        <a href="#">информация</a>
+                    </li>
+                    <li class="main-navigation-item">
+                        <a href="#">новости</a>
+                    </li>
+                    <li class="main-navigation-item">
+                        <a href="#">прайс-лист</a>
+                    </li>
+                    <li class="main-navigation-item">
+                        <a href="#">магазин</a>
+                    </li>
+                    <li class="main-navigation-item">
+                        <a href="#">контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-login">
+                <a href="#">вход</a>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <figure class="content-logo">
+            <img src="img/content-logo.png" width="368" height="152" alt="barbershop borodinski">
+        </figure>
+        <div class="content-advantages clearfix">
+            <section class="content-advantages-block">
+                <h2 class="content-advantages-title">быстро</h2>
+                <p>мы&nbsp;делаем свою работу быстро! два часа пролетят незаметно и&nbsp;вы&nbsp;&mdash; счастливый обладатель стильной стрижки-минутки!</p>
+            </section>
+            <section class="content-advantages-block">
+                <h2 class="content-advantages-title">круто</h2>
+                <p>забудьте, как вы&nbsp;стриглись раньше. мы&nbsp;сделаем из&nbsp;вас звезду футбола или кино! во&nbsp;всяком случае внешне.</p>
+            </section>
+            <section class="content-advantages-block">
+                <h2 class="content-advantages-title">дорого</h2>
+                <p>наши мастера&nbsp;&mdash; профессионалы своего дела и&nbsp;не&nbsp;могут стоить дешево. к&nbsp;тому&nbsp;же, разве цена не&nbsp;дает определенный статус?</p>
+            </section>
+        </div>
+        <div class="content-index-row clearfix">
+            <section class="content-left-column content-news">
+                <h2 class="content-column-title">новости</h2>
+                <ul class="content-news-preview">
+                    <li>
+                        <p>нам наконец завезли ягермайстер! теперь вы&nbsp;можете пропустить стаканчик во&nbsp;время стрижки</p>
+                        <time datetime="2021-09-25">25 сентября</time>
+                    </li>
+                    <li>
+                        <p>в&nbsp;нашей команде пополнение, борис &laquo;бритва&raquo; стригунец, обладатель множества титулов и&nbsp;наград пополнил наши стройные ряды</p>
+                        <time datetime="2021-09-19">19 сентября</time>
+                    </li>
+                </ul>
+                <a href="#" class="btn">все новости</a>
+            </section>
+            <section class="content-right-column content-gallery">
+                <h2 class="content-column-title">фотогалерея</h2>
+                <div class="content-gallery-block">
+                    <figure class="content-gallery-img">
+                        <img src="img/content-gallery-picture.jpg" width="286" height="164" alt="интерьер">
+                    </figure>
+                    <button class="btn content-gallery-prev" disabled>назад</button>
+                    <button class="btn content-gallery-next">вперед</button>
+                </div>
+            </section>
+        </div>
+        <div class="content-index-row clearfix">
+            <section class="content-left-column content-contacts">
+                <h2 class="content-column-title">контактная информация</h2>
+                <div class="content-contacts-block">
+                    <p>barbershop «borodinski»</p>
+                    <p>адрес: г. санкт-петербург, ул. собаки павлова, д. 13</p>
+                </div>
+                <div class="content-contacts-block">
+                    <p>телефон: +7 (495) 666-02-66</p>
+                    <p>время работы:</p>
+                    <p>пн — пт: с 10:00 до 22:00</p>
+                    <p>сб — вс: с 10:00 до 19:00</p>
+                </div>
+                <a href="#" class="btn">как проехать</a>
+                <a href="#" class="btn">обратная связь</a>
+            </section>
+            <section class="content-right-column content-appointment-form">
+                <h2 class="content-column-title">записаться</h2>
+                <p>укажите желаемую дату и&nbsp;время и&nbsp;мы&nbsp;свяжемся с&nbsp;вами для подтверждения брони</p>
+                <form action="/echo" method="post">
+                    <input type="date" name="date" value="" required="required">
+                    <input type="time" name="time" value="" required="required">
+                    <input type="text" name="name" value="" placeholder="ваше имя">
+                    <input type="tel" name="phone" value="" placeholder="телефон" required="required">
+                    <button type="submit" class="btn btn-submit">отправить</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container clearfix">
+            <div class="footer-block footer-contacts">
+                <p>barbershop «borodinski»</p>
+                <p>адрес: г. санкт-петербург, ул. собаки павлова, д. 13</p>
+                <a href="#">как нас найти?</a>
+                <p>телефон: +7 (495) 666-02-66</p>
+            </div>
+            <div class="footer-block  footer-social">
+                <p>давайте дружить!</p>
+                <a href="#" class="btn footer-social-vk">вконтакте</a>
+                <a href="#" class="btn footer-social-fb">фейсбук</a>
+                <a href="#" class="btn footer-social-inst">инстаграм</a>
+            </div>
+            <div class="footer-block footer-copyright">
+                <p>дизайн сайта:</p>
+                <a href="https://github.com/katayasu" class="btn">katayasu</a>
+            </div>
+        </div>
+    </footer>
+        </section>
 
-    </div>
-  </main>
-  <section class="white-block">
-    <div class="left-block">
-      <h2>Новости</h2>
-      <div class="news">
-        <p>Нам наконец завезли ягермейстер! Теперь вы можете <br> пропустить стаканчик во время стрижки <br><time
-            datetime="2021-01-11">11 января</time></p>
-        <p>В нашей команде пополнение, Борис "Бритва" Стригунец,<br> обладатель множества титулов и наград пополнил <br>
-          наши стройные ряды <br><time datetime="2021-01-18">18 января</time></p>
-      </div>
-      <button class="white-block-btn" type="button">Все новости</button>
-    </div>
-    <img class="block-shadow" src="img/block-shadow.png" alt="Block shadow">
-    <div class="right-block">
-      <h2>Фотогалерея</h2>
-      <img class="gallery-img" src="img/gallery.png" alt="Фотогалерея">
-      <div class="gallery-btns">
-        <button class="white-block-btn">Назад</button>
-        <button class="white-block-btn">Вперед</button>
-      </div>
-    </div>
-  </section>
-  <section class="white-block contact-info">
-    <div class="left-block">
-      <h2>Контактная информация</h2>
-      <ul>
-        <li>Барбершоп "Бородинский"</li>
-        <li>Адрес: г. Санкт-Петербург, Б. Конюшенная, Д.19/8</li>
-        <li>Телефон: +7(495)666-02-66</li>
-      </ul>
-      <ul>
-        <li>Время работы:</li>
-        <li>Пн-пт: с 10:00 до 22:00</li>
-        <li>Сб-вс: с 10:00 до 19:00</li>
-      </ul>
-      <div class="contacts-btns">
-        <button class="white-block-btn" type="button">Как проехать</button>
-        <button class="white-block-btn" type="button">Обратная связь</button>
-      </div>
-    </div>
-    <img class="block-shadow" src="img/block-shadow.png" alt="Block shadow">
-    <div class="right-block contacts-block">
-      <h2>Записаться</h2>
-      <p>Укажите желаемую дату и время и мы свяжемся <br> с вами для подтверждения брони</p>
-      <form class="contacts">
-        <div class="input-info">
-          <h3>Дата</h3>
-          <input type='date' placeholder="08.10.2021">
-        </div>
-        <div class="input-info">
-          <h3>Ваше имя</h3>
-          <input placeholder="Борода">
-        </div>
-        <div class="input-info">
-          <h3>Время</h3>
-          <input type="time" placeholder="10:00">
-          <div class="input-info"></div>
-          <h3>Телефон</h3>
-          <input type="tel" id="phone-mask" placeholder="+7(123)456-78-90">
-        </div>
-      </form>
-      <button class="white-block-btn send-btn">Отправить</button>
-    </div>
-  </section>
-  <footer>
-    <div class="footer-content">
-      <ul>
-        <li>Барбершоп "Бородинский"</li>
-        <li>Адрес: г. Санкт-Петербург, Б. Конюшенная, Д.19/8></li>
-        <li><a href="#">Как нас найти?</a></li>
-        <li>Телефон: +7(495)666-02-66</li>
-      </ul>
-    </div>
-    <div class="social">
-      <p>Давайте дружить!</p>
-      <div class="social-icons">
-        <a href="#" class="social-icon"><img width="26" height="43" src="svg/vk.svg" alt="vk"></a>
-        <a href="#" class="social-icon"><img width="11" height="43" src="svg/facebook.svg" alt="facebook"></a>
-        <a href="#" class="social-icon"><img width="20" height="43" src="svg/instagram.svg" alt="instagram"></a>
-      </div>
-    </div>
-    <div class="copyright">
-      <p class="relatives">Разработано:</p>
-      <a href="#" class="white-block-btn">HTML ACADEMY</a>
-    </div>
-  </footer>
 </body>
-   <script src="https://unpkg.com/imask"></script>
-    <script>
-        var phoneMask = IMask(
-        document.getElementById('phone-mask'), {
-        mask: '+{7}(000)000-00-00'
-        });
-    </script>
+
+
 </html>
