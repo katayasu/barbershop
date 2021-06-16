@@ -35,7 +35,7 @@
                 </ul>
             </nav>
             <div class="header-login">
-                <a href="#">вход</a>
+                <a class="login-link" href="login.html">вход</a>
             </div>
         </div>
     </header>
@@ -96,10 +96,8 @@
                     <p>пн — пт: с 10:00 до 22:00</p>
                     <p>сб — вс: с 10:00 до 19:00</p>
                 </div>
-                <div class="contact-buttons">
-                <a href="#" class="btn">как проехать</a>
+                <a href="#" class="btn map-link">как проехать</a>
                 <a href="#" class="btn">обратная связь</a>
-            </div>
             </section>
             <section class="content-right-column content-appointment-form">
                 <h2 class="content-column-title">записаться</h2>
@@ -134,9 +132,40 @@
             </div>
         </div>
     </footer>
-        </section>
+        <section class="modal modal-login">
+        <h2>Личный кабинет</h2>
+        <p class="modal-description">Введите пожалуйста свой логин и пароль</p>
+        <form class="login-form">
+            <p>
+                <label class="visually-hidden" for="user-login">Логин</label>
+                <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="email@example.com">
+            </p>
+            <p>
+                <label class="visually-hidden" for="user-password">Пароль</label>
+                <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="*********">
+            </p>
+            <p class="login-help">
+                <label class="login-checkbox">
+                    <input type="checkbox" name="rememeber" class="visually-hidden">
+                    <span class="checkbox-indicator"></span>
+                    Запомните меня</label>
+                <a class="restore" href="#">Я забыл пароль!</a>
+            </p>
+            <button class="btn login-btn" type="submit">Войти</button>
+        </form>
+        <button class="modal-close-login" type="button"><span class="visually-hidden">Закрыть</span></button>
+    </section>
+
+    <section class="modal modal-map">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <p>
+            <img src="img/map.jpg" width="765" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        </p>
+        <button class="modal-close-map" type="button"><span class="visually-hidden">Закрыть</span></button>
+    </section>
 
 </body>
 
+<script type="text/javascript" src="js/script.js"></script>
 
 </html>
